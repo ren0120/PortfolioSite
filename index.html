@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="main.css">
+
+<head>
+    <meta charset="UTF=8">
+    <title>Portfolio Site</title>
+	<meta name=”viewport” content=”width=device-width,initial-scale=1.0″>
+</head>
+<body>
+	<div class="container"> 
+		<!-- ヘッダー -->
+		<div class="card" >
+			<img class="card-img" src="Image/main.JPG">
+			<div class="card-img-overlay">
+			  <p class="text-white fs-1">Ren Minakawa Portfolio</p>
+			</div>
+		  </div>
+	
+		<!-- ナビゲーション -->
+		<nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
+			<div class="container-fluid">
+			  <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
+				<ul class="navbar-nav">
+				  <li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="#">Top</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#profile">Profile</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#portfolio">Portfolio</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#contact">Contact</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="https://github.com/ren0120">GitHub</a>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		  </nav>
+
+		<!-- プロフィール -->
+		<div id="profile">
+			<p class="text-center fs-1">Profile</p>
+			<ul class="list-group list-group-flush" >
+				<li class="list-group-item">Ren Minakawa</li>
+				<li class="list-group-item">出身：東京都</li>
+				<li class="list-group-item">年齢：２５歳</li>
+				<li class="list-group-item">経歴：２０１９年４月 四年制大学卒業後、SES企業に入社し現在に至る</li>
+				<li class="list-group-item">趣味：ファッション・音楽鑑賞</li>
+			</ul>
+		</div>
+
+		<!-- ポートフォリオ -->
+		<div style="text-align: center" id="portfolio">
+			<p class="text-center fs-1">Portfolio</p>
+			<a href="#">
+				<img src="Image/vintage-map.png" class="img-fluid" height="280" width="430">
+			</a>
+			<p class="text-center fs-3">Vintage Map</p>
+			<p class="text-center">古着屋をGoogle Map上で確認できるWEBアプリです。</p>
+			<p class="text-center">JavaScript / React / Google Map API / Material-UI / Firebase</p>
+
+			<a href="#">
+				<img src="Image/main.JPG" class="img-fluid" height="280" width="430">
+			</a>
+			<p class="text-center fs-3">ポートフォリオサイト</p>
+			<p class="text-center">今ご覧になっているポートフォリオサイトです。</p>
+			<p class="text-center">HTML / CSS / JavaScript / bootstrap</p>
+		</div>
+
+		<!-- お問い合わせ -->
+		<div class="form" id="contact">
+			<p class="text-center fs-1">Contact</p>
+			<form  class="align-items-center" name="contactForm">
+				<div class="col-md-6">
+					<label for="exampleInputPassword1" class="form-label">お名前</label>
+					<input type="text" class="form-control" id="InputName">
+				</div>
+				<div class="col-md-6">
+					<label for="exampleInputEmail1" class="form-label">メールアドレス</label>
+					<input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="メールアドレスの形式で入力してください">
+				</div>
+				<div class="col-md-6">
+					<label for="exampleFormControlTextarea1" class="form-label">お問い合わせ内容</label>
+					<textarea class="form-control align-items-center" id="InputContent" rows="3"></textarea>
+				</div>
+			</form>
+			<button type="submi" class="btn btn-primary align-items-center" onclick="slack()">送信</button>
+			<p></p>
+		</div>
+
+
+		<footer class="footer mt-auto py-3 bg-light">
+			<div class="footerContainer">
+			  <span class="text-muted">© 2022 Minakawa</span>
+			</div>
+		</footer>
+	</div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="main.js"></script>
+
+
+</html>
