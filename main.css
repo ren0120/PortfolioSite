@@ -1,0 +1,35 @@
+/* 全体フォント */
+body {
+    font-family: "ヒラギノ明朝 ProN";
+}
+
+/* 表紙の文字を中央揃え */
+.card-img-overlay {
+	padding: 0;
+	top: calc(50% - 0.5rem);
+	text-align: center;
+	font-weight: bold;
+  }
+
+/* ナビゲーションの高さ調整 */
+.navbar-expand-sm {
+	height: 70px;
+}
+
+/* タイトルの位置調整 */
+.fs-1 {
+	padding: 5% 0;
+}
+
+/* リストの位置調整 */
+li {
+    float: left;
+    padding: 60px;
+}
+
+/* フッター調整 */
+.footerContainer {
+	width: auto;
+	max-width: 680px;
+	padding: 0 15px;
+  }
